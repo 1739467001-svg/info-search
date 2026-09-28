@@ -1,6 +1,14 @@
+---
+title: LLM-as-a-Judge（大模型当裁判）
+date: 2026-09-27
+type: 概念
+tags: [llm, eval, llm-as-judge, bias]
+confidence: 高
+---
+
 # 💡 LLM-as-a-Judge（大模型当裁判）
 
-> 整理日期：2026-09-27 ｜ 类型：概念解读 ｜ 关联：`relations.md`
+> 整理日期：2026-09-27 ｜ 类型：概念解读 ｜ 置信度：**高**（一手论文 + 独立实践者交叉印证）｜ 关联：`relations.md`
 > 一句话总结：**让一个更强的大模型（如 GPT-4）按你写好的评分标准，去评判 AI 输出的好坏——这是 LLM 评估（EVAL）中最常用、也最受争议的打分方式：便宜、快速、接近人，但带着一身的系统性偏见，需要校准。**
 
 ---
@@ -128,3 +136,9 @@
 - **Anthropic 官方 LLM-as-judge 文档**（本环境被镜像拦截未能读取正文，仅供参考）：https://docs.anthropic.com/en/docs/build-with-claude/llm-as-judge
 
 > 📎 关联文档：[EVAL（LLM 评测）](EVAL.md)｜已登记 `relations.md`：LLM-as-Judge ⊂ EVAL 的评分器；待研究：Reward Model（奖励模型）、人类评估、Promptfoo/LangSmith 工具生态。
+
+---
+
+## 9. 我的思考（留给自己）
+
+> （读完这篇后用自己的话写：它修正了我哪个原有认识？下一步想动手验证什么？）

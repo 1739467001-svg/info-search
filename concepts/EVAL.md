@@ -1,6 +1,14 @@
+---
+title: EVAL（LLM 评测 / Evals）
+date: 2026-09-27
+type: 概念
+tags: [llm, eval, testing, ai-engineering]
+confidence: 高
+---
+
 # 💡 EVAL（LLM 评测 / Evals）
 
-> 整理日期：2026-09-27 ｜ 类型：概念解读 ｜ 关联：`relations.md`
+> 整理日期：2026-09-27 ｜ 类型：概念解读 ｜ 置信度：**高**（官方文档/论文/多位独立实践者交叉印证）｜ 关联：`relations.md`
 > 一句话总结：**EVAL 是给大语言模型应用写"测试"——用一组固定用例和评分标准，重复、客观地衡量 AI 输出好不好。对 AI 开发者来说，它是把"感觉还行"变成"可验证、可回归"的唯一途径，相当于 LLM 应用的单元测试。**
 
 ---
@@ -54,7 +62,7 @@
 | 2002–2004 | 传统 NLP 指标时代 | BLEU（机器翻译）、ROUGE（摘要）——纯文本重合度指标 |
 | 2020 | 大模型基准开始 | MMLU 发布（57 学科考试式选择题） |
 | 2021 | 代码评测出现 | HumanEval（让模型写代码，用自动纠错验证） |
-| 2022 | "大考卷"底蕴时代 | BIG-bench（204 个任务）、斯坦福 HELM（多维度系统性评测） |
+| 2022 | "通用大考卷"时代（公开基准） | BIG-bench（204 个任务）、斯坦福 HELM（多维度系统性评测） |
 | 2023 | **应用层评测框架爆发** | OpenAI Evals 开源、Promptfoo、RAGAS（RAG 专用指标库）、DeepEval、LangSmith 评估器上线；MT-Bench 提出 "LLM-as-a-judge" 方法论 |
 | 2023.10 | Agent 评测开端 | SWE-bench：用 2,294 个真实 GitHub issue 测 AI 改 bug，当时最强的 GPT-4 也只能解决 1.96% |
 | 2024–2026 | 评测成为 AI 工程标配 | 评测驱动开发成主流；Agent/工具调用评测兴起（SWE-bench 成为标配考题） |
@@ -123,3 +131,9 @@
 - [HuggingFace lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) —— 公开基准落地工具
 
 > 📌 待深入关联：Benchmark、LLM-as-a-judge、RAG（检索增强）、Agent 评测、评测驱动开发 —— 已登记在 `relations.md`，后续逐个研究。
+
+---
+
+## 9. 我的思考（留给自己）
+
+> （读完这篇后用自己的话写：它修正了我哪个原有认识？下一步想动手验证什么？）

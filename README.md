@@ -20,26 +20,39 @@
 
 ## 话题索引 INDEX
 
-| 日期 | 类型 | 主题 | 文档 | 状态 |
-|------|------|------|------|------|
-| 2026-09-27 | 💡 概念 | EVAL（LLM 评测） | [concepts/EVAL.md](concepts/EVAL.md) | ✅ |
-| 2026-09-27 | 💡 概念 | LLM-as-a-Judge（大模型当裁判） | [concepts/LLM-as-Judge.md](concepts/LLM-as-Judge.md) | ✅ |
-| 2026-09-27 | 📖 书籍 | 现代思维工具 100 讲（万维钢·音频课） | [books/现代思维工具100讲.md](books/现代思维工具100讲.md) | ✅ |
-| 2026-09-27 | 💡 概念 | 贝叶斯推理（Bayes' Theorem） | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | ✅ |
-| — | — | — | — | 等待更多输入 |
+> 本表由 `python3 scripts/gen_index.py` 从各文档 front-matter 自动生成，新增文档后运行一次即可。
+
+<!-- INDEX:START -->
+| 日期 | 类型 | 主题 | 文档 | 置信度 |
+|------|------|------|------|--------|
+| 2026-09-27 | 概念 | EVAL（LLM 评测 / Evals） | [concepts/EVAL.md](concepts/EVAL.md) | 高 |
+| 2026-09-27 | 概念 | LLM-as-a-Judge（大模型当裁判） | [concepts/LLM-as-Judge.md](concepts/LLM-as-Judge.md) | 高 |
+| 2026-09-27 | 概念 | 贝叶斯推理 / 贝叶斯定理 | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | 高 |
+| 2026-09-27 | 书籍 | 现代思维工具 100 讲（万维钢·音频课） | [books/现代思维工具100讲.md](books/现代思维工具100讲.md) | 中 |
+<!-- INDEX:END -->
 
 > 🔗 所有主题之间的关联（包含/基于/区别于…）维护在 [relations.md](relations.md) 知识关系图谱中。
+
+## 写作约定
+
+- **front-matter**：每篇内容文档头部带 YAML 元数据（title / date / type / tags / confidence），索引脚本据此生成表格
+- **置信度**：**高** = 多来源交叉核实且含一手来源；**中** = 依赖二手转引或部分待核验；**低** = 单一来源，仅作线索
+- **参考来源**：只列实际访问过的链接，逐条标注核实状态；未能验证的如实说明，编造链接是最高禁忌
+- **我的思考**：每篇文档末尾的留白区块，只由仓库所有者填写——这是"资料堆"和"知识库"的区别
+- **关系图谱**：每新增一个主题，同步更新 `relations.md`（节点 + 边 + 待研究队列）
 
 ## 目录结构
 
 ```
 info-search/
-├── README.md                  # 仓库说明 + 话题索引
+├── README.md                  # 仓库说明 + 话题索引（自动生成）
 ├── relations.md               # 知识关系图谱（主题间关联）
 ├── templates/
 │   ├── topic-template.md      # 专题调研模板（关键词）
 │   ├── concept-template.md    # 概念解读模板（观点/概念）
 │   └── book-template.md       # 读书笔记模板（书名）
+├── scripts/
+│   └── gen_index.py           # README 索引自动生成脚本
 ├── topics/                    # 关键词专题调研
 ├── concepts/                  # 概念/观点解读
 └── books/                     # 读书笔记
