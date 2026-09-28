@@ -25,6 +25,7 @@
 | 2026-09-27 | 💡 概念 | EVAL（LLM 评测） | [concepts/EVAL.md](concepts/EVAL.md) | ✅ |
 | 2026-09-27 | 💡 概念 | LLM-as-a-Judge（大模型当裁判） | [concepts/LLM-as-Judge.md](concepts/LLM-as-Judge.md) | ✅ |
 | 2026-09-27 | 📖 书籍 | 现代思维工具 100 讲（万维钢·音频课） | [books/现代思维工具100讲.md](books/现代思维工具100讲.md) | ✅ |
+| 2026-09-27 | 💡 概念 | 贝叶斯推理（Bayes' Theorem） | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | ✅ |
 | — | — | — | — | 等待更多输入 |
 
 > 🔗 所有主题之间的关联（包含/基于/区别于…）维护在 [relations.md](relations.md) 知识关系图谱中。
