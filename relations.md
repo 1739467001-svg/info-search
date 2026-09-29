@@ -25,15 +25,32 @@ graph LR
     BOOK -.->|涵盖| FWK["心智模型 / 思维工具<br/>待研究"]
     BOOK -.->|涵盖| ANTF["反脆弱<br/>待研究"]
     BOOK -.->|延伸阅读| TBOOK["《思考，快与慢》等认知书<br/>待研究"]
-    BIAN["💡 边际效应<br/>边际效用递减"]:::done
+    BIAN["💡 边际效应<br/>边际递减"]:::done
     BIAN -.->|同属思维工具簇| FWK
+
+    ML["💡 机器学习<br/>总纲"]:::done
+    DL["💡 深度学习 DL"]:::done
+    CNN["💡 卷积神经网络 CNN"]:::done
+    TF["🔧 TensorFlow<br/>框架/工具"]:::done
+    RL["💡 强化学习 RL"]:::done
+    CL["💡 持续学习 Continual<br/>Learning"]:::done
+    TR["💡 Transformer 架构<br/>待研究"]:::td
+    PT["🔧 PyTorch<br/>待对比"]:::td
+
+    ML -->|子流派| DL
+    ML -->|第三条路线| RL
+    ML -->|课程设置| CL
+    DL --> CNN
+    DL -.->|当代主流架构| TR
+    TF -.->|实现工具| DL
+    TF -.->|生态对手| PT
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
     classDef td fill:#fef7e0,stroke:#f9ab00,stroke-width:1px,stroke-dasharray: 4 3;
-    class EVAL,J,BOOK,BAY,BIAN done;
-    class FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL td;
-    class FWK,ANTF,TBOOK td;
+class EVAL,J,BOOK,BAY,BIAN done;
+class ML,DL,CNN,TF,RL,CL done;
+class TR,PT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -49,6 +66,12 @@ graph LR
 | 现代思维工具 100 讲 | 📖 书籍 | 万维钢音频课程：思维工具的系统目录（非纸质书） | [<span>books/现代思维工具100讲.md</span>](books/现代思维工具100讲.md) | 2026-09-27 |
 | 贝叶斯推理 | 💡 概念 | 先验 × 证据 → 后验，信念按比例更新的方法论 | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | 2026-09-27 |
 | 边际效应 | 💡 概念 | 每多一单位消费，新增满足感递减（戈森第一法则），决策只看"下一单位" | [concepts/边际效应.md](concepts/边际效应.md) | 2026-09-28 |
+| 机器学习 | 🧠 总纲 | 让程序从数据中学习规律的学科总称 | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
+| 深度学习 | 🧠 子流派 | 多层神经网络自动学特征 | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
+| 卷积神经网络 CNN | 🧠 概念 | 神经网络/参数共享的图像架构，2012 深度学习革命 | [concepts/卷积神经网络.md](concepts/卷积神经网络.md) | 2026-09-28 |
+| TensorFlow | 🧠 工具 | Google 2015 开源的深度学习框架（Keras/TFLite） | [concepts/TensorFlow.md](concepts/TensorFlow.md) | 2026-09-28 |
+| 强化学习 RL | 🧠 学习路线 | 试错+奖励的第三条学习路线（AlphaGo、RLHF） | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
+| 持续学习 | 🧠 前沿 | 学新不忘旧（对抗灾难性遗忘）的课程设置 | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
@@ -67,6 +90,13 @@ graph LR
 | 贝叶斯推理 | **区别于** → | 频率学派统计 | 先验 vs 长期频率（待展开） |
 | 贝叶斯推理 | **应用到** → | LLM 评测（EVAL） | 概率视角的校准思想（浅关联，已标注） |
 | 边际效应 | **同属思维工具簇** → | 心智模型清单 | 最常用的决策直觉工具之一（待展开） |
+| 机器学习 | 包含 **子流派** → | 深度学习 | ML 的一个实现路径（本次收录于全景文档）|
+| 机器学习 | 包含 **第三条路线** → | 强化学习 | 试错+奖励，与监督学习并列 |
+| 机器学习 | 设定 **课程** → | 持续学习 | 学新不遗忘旧任务的命题 |
+| 深度学习 | 经典架构 → | 卷积神经网络 CNN | 图像处理代表 |
+| 深度学习 | 当代主流架构 → | Transformer | 语言/多模态底座（待研究） |
+| TensorFlow | 实现工具 → | 深度学习 | 框架服务 DL 训练部署 |
+| TensorFlow | 生态对比 → | PyTorch | 双雄局面（待研究） |
 
 ---
 
