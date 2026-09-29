@@ -25,11 +25,13 @@ graph LR
     BOOK -.->|涵盖| FWK["心智模型 / 思维工具<br/>待研究"]
     BOOK -.->|涵盖| ANTF["反脆弱<br/>待研究"]
     BOOK -.->|延伸阅读| TBOOK["《思考，快与慢》等认知书<br/>待研究"]
+    BIAN["💡 边际效应<br/>边际效用递减"]:::done
+    BIAN -.->|同属思维工具簇| FWK
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
     classDef td fill:#fef7e0,stroke:#f9ab00,stroke-width:1px,stroke-dasharray: 4 3;
-    class EVAL,J,BOOK,BAY done;
+    class EVAL,J,BOOK,BAY,BIAN done;
     class FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL td;
     class FWK,ANTF,TBOOK td;
 ```
@@ -46,6 +48,7 @@ graph LR
 | LLM-as-a-Judge | 💡 概念 | 用更强的大模型按评分标准给 AI 输出打分 | [concepts/LLM-as-Judge.md](concepts/LLM-as-Judge.md) | 2026-09-27 |
 | 现代思维工具 100 讲 | 📖 书籍 | 万维钢音频课程：思维工具的系统目录（非纸质书） | [<span>books/现代思维工具100讲.md</span>](books/现代思维工具100讲.md) | 2026-09-27 |
 | 贝叶斯推理 | 💡 概念 | 先验 × 证据 → 后验，信念按比例更新的方法论 | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | 2026-09-27 |
+| 边际效应 | 💡 概念 | 每多一单位消费，新增满足感递减（戈森第一法则），决策只看"下一单位" | [concepts/边际效应.md](concepts/边际效应.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
@@ -63,6 +66,7 @@ graph LR
 | 现代思维工具 100 讲 | **涵盖** → | 心智模型 / 反脆弱等 | 课程工具目录（待展开） |
 | 贝叶斯推理 | **区别于** → | 频率学派统计 | 先验 vs 长期频率（待展开） |
 | 贝叶斯推理 | **应用到** → | LLM 评测（EVAL） | 概率视角的校准思想（浅关联，已标注） |
+| 边际效应 | **同属思维工具簇** → | 心智模型清单 | 最常用的决策直觉工具之一（待展开） |
 
 ---
 

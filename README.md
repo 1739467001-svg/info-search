@@ -25,6 +25,7 @@
 <!-- INDEX:START -->
 | 日期 | 类型 | 主题 | 文档 | 置信度 |
 |------|------|------|------|--------|
+| 2026-09-28 | 概念 | 边际效应（边际效用递减） | [concepts/边际效应.md](concepts/边际效应.md) | 高 |
 | 2026-09-27 | 概念 | EVAL（LLM 评测 / Evals） | [concepts/EVAL.md](concepts/EVAL.md) | 高 |
 | 2026-09-27 | 概念 | LLM-as-a-Judge（大模型当裁判） | [concepts/LLM-as-Judge.md](concepts/LLM-as-Judge.md) | 高 |
 | 2026-09-27 | 概念 | 贝叶斯推理 / 贝叶斯定理 | [concepts/贝叶斯推理.md](concepts/贝叶斯推理.md) | 高 |
