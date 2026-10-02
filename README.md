@@ -25,6 +25,7 @@
 <!-- INDEX:START -->
 | 日期 | 类型 | 主题 | 文档 | 置信度 |
 |------|------|------|------|--------|
+| 2026-09-28 | 概念 | RSI（递归自我改进 / Recursive Self-Improvement） | [concepts/RSI-递归自我改进.md](concepts/RSI-递归自我改进.md) | 高 |
 | 2026-09-28 | 概念 | TensorFlow（深度学习框架） | [concepts/TensorFlow.md](concepts/TensorFlow.md) | 高 |
 | 2026-09-28 | 概念 | 卷积神经网络（CNN） | [concepts/卷积神经网络.md](concepts/卷积神经网络.md) | 高 |
 | 2026-09-28 | 概念 | 日柱与八字四柱体系 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 中 |

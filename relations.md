@@ -48,6 +48,13 @@ graph LR
     RIZ["💡 日柱 / 八字四柱<br/>干支五行体系"]:::done
     BAG["📮 周易 / 八卦<br/>待研究"]:::td
     RIZ -.->|同源?不同流| BAG
+
+    RSI["💡 RSI 递归自我改进<br/>AlphaEvolve / DGM"]:::done
+    IE["🚀 智能爆炸与 AI 对齐<br/>待研究"]:::td
+    RL -.->|引擎之一| RSI
+    RSI ---|区别于| CL
+    RSI -.->|评测瓶颈| EVAL
+    RSI -.->|核心争议| IE
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
@@ -55,7 +62,8 @@ graph LR
 class EVAL,J,BOOK,BAY,BIAN done;
 class ML,DL,CNN,TF,RL,CL done;
 class RIZ done;
-class TR,PT,BAG,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
+class RSI done;
+class TR,PT,BAG,IE,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -78,6 +86,7 @@ class TR,PT,BAG,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 | 强化学习 RL | 🧠 学习路线 | 试错+奖励的第三条学习路线（AlphaGo、RLHF） | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
 | 持续学习 | 🧠 前沿 | 学新不忘旧（对抗灾难性遗忘）的课程设置 | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
 | 日柱 / 八字四柱 | 📮 传统文化 | 干支纪日中的"生日柱"，日主代表自己；属五行体系非八卦 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 2026-09-28 |
+| RSI 递归自我改进 | 💡 概念 | AI 改进自身并循环增强（AlphaEvolve/DGM） | [concepts/RSI-递归自我改进.md](concepts/RSI-递归自我改进.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
@@ -104,6 +113,10 @@ class TR,PT,BAG,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 | TensorFlow | 实现工具 → | 深度学习 | 框架服务 DL 训练部署 |
 | TensorFlow | 生态对比 → | PyTorch | 双雄局面（待研究） |
 | 日柱 / 八字 | **同源不同流** → | 周易 / 八卦 | 五行干支 vs 易经占卜（待研究） |
+| RSI 递归自我改进 | **引擎之一** ← | 强化学习 RL | 进化搜索/自我博弈是自我改进的常用引擎 |
+| RSI | **区别于** → | 持续学习 | 改进自身能力 vs 学新不忘旧 |
+| RSI | **评测瓶颈** → | EVAL | 自动评估器决定进化方向（Goodhart） |
+| RSI | **核心争议** → | 智能爆炸与对齐 | FOOM vs 渐进（待研究） |
 
 ---
 
