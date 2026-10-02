@@ -27,6 +27,7 @@
 |------|------|------|------|--------|
 | 2026-09-28 | 概念 | TensorFlow（深度学习框架） | [concepts/TensorFlow.md](concepts/TensorFlow.md) | 高 |
 | 2026-09-28 | 概念 | 卷积神经网络（CNN） | [concepts/卷积神经网络.md](concepts/卷积神经网络.md) | 高 |
+| 2026-09-28 | 概念 | 日柱与八字四柱体系 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 中 |
 | 2026-09-28 | 概念 | 边际效应（边际效用递减） | [concepts/边际效应.md](concepts/边际效应.md) | 高 |
 | 2026-09-28 | 专题 | 机器学习全景（ML / DL / RL / 持续学习） | [topics/机器学习全景.md](topics/机器学习全景.md) | 高 |
 | 2026-09-27 | 概念 | EVAL（LLM 评测 / Evals） | [concepts/EVAL.md](concepts/EVAL.md) | 高 |

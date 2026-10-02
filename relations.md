@@ -44,13 +44,18 @@ graph LR
     DL -.->|当代主流架构| TR
     TF -.->|实现工具| DL
     TF -.->|生态对手| PT
+
+    RIZ["💡 日柱 / 八字四柱<br/>干支五行体系"]:::done
+    BAG["📮 周易 / 八卦<br/>待研究"]:::td
+    RIZ -.->|同源?不同流| BAG
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
     classDef td fill:#fef7e0,stroke:#f9ab00,stroke-width:1px,stroke-dasharray: 4 3;
 class EVAL,J,BOOK,BAY,BIAN done;
 class ML,DL,CNN,TF,RL,CL done;
-class TR,PT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
+class RIZ done;
+class TR,PT,BAG,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -72,6 +77,7 @@ class TR,PT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 | TensorFlow | 🧠 工具 | Google 2015 开源的深度学习框架（Keras/TFLite） | [concepts/TensorFlow.md](concepts/TensorFlow.md) | 2026-09-28 |
 | 强化学习 RL | 🧠 学习路线 | 试错+奖励的第三条学习路线（AlphaGo、RLHF） | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
 | 持续学习 | 🧠 前沿 | 学新不忘旧（对抗灾难性遗忘）的课程设置 | [topics/机器学习全景.md](topics/机器学习全景.md) | 2026-09-28 |
+| 日柱 / 八字四柱 | 📮 传统文化 | 干支纪日中的"生日柱"，日主代表自己；属五行体系非八卦 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
@@ -97,6 +103,7 @@ class TR,PT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 | 深度学习 | 当代主流架构 → | Transformer | 语言/多模态底座（待研究） |
 | TensorFlow | 实现工具 → | 深度学习 | 框架服务 DL 训练部署 |
 | TensorFlow | 生态对比 → | PyTorch | 双雄局面（待研究） |
+| 日柱 / 八字 | **同源不同流** → | 周易 / 八卦 | 五行干支 vs 易经占卜（待研究） |
 
 ---
 
