@@ -59,6 +59,12 @@ graph LR
     ENT["🏢 企业软件缩写全景<br/>OA/CRM/ERP/SCM/MES"]:::done
     ERPD["ERP 深读（SAP/用友生态）<br/>待研究"]:::td
     ENT -.->|深入单品| ERPD
+
+    SOL["🌐 Solana 生态<br/>PoH/Sealevel/DePIN"]:::done
+    ETHC["🌐 以太坊与 L2 路线<br/>待研究"]:::td
+    AIAGENT["🤖 AI Agent 链上支付<br/>待研究"]:::td
+    SOL -.->|路线对照| ETHC
+    SOL -.->|前沿交叉| AIAGENT
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
@@ -68,7 +74,8 @@ class ML,DL,CNN,TF,RL,CL done;
 class RIZ done;
 class RSI done;
 class ENT done;
-class TR,PT,BAG,IE,ERPD,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
+class SOL done;
+class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -93,6 +100,7 @@ class TR,PT,BAG,IE,ERPD,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 | 日柱 / 八字四柱 | 📮 传统文化 | 干支纪日中的"生日柱"，日主代表自己；属五行体系非八卦 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 2026-09-28 |
 | RSI 递归自我改进 | 💡 概念 | AI 改进自身并循环增强（AlphaEvolve/DGM） | [concepts/RSI-递归自我改进.md](concepts/RSI-递归自我改进.md) | 2026-09-28 |
 | 企业软件缩写全景 | 🏢 专题 | OA/CRM/ERP/SCM/MES 等企业信息化术语地图 | [topics/企业软件缩写全景.md](topics/企业软件缩写全景.md) | 2026-09-28 |
+| Solana 生态 | 🌐 专题 | 高性能公链 PoH+Sealevel 及其项目宇宙 | [topics/Solana生态.md](topics/Solana生态.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
