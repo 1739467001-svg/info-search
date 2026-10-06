@@ -65,6 +65,9 @@ graph LR
     AIAGENT["🤖 AI Agent 链上支付<br/>待研究"]:::td
     SOL -.->|路线对照| ETHC
     SOL -.->|前沿交叉| AIAGENT
+
+    VZ["⚙️ Vercel 工具链<br/>v0 / Eve / Sandboxes"]:::done
+    VZ -.->|RunSDK 连通 agent 评测| EVAL
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
@@ -75,6 +78,7 @@ class RIZ done;
 class RSI done;
 class ENT done;
 class SOL done;
+class VZ done;
 class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
@@ -101,6 +105,7 @@ class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,A
 | RSI 递归自我改进 | 💡 概念 | AI 改进自身并循环增强（AlphaEvolve/DGM） | [concepts/RSI-递归自我改进.md](concepts/RSI-递归自我改进.md) | 2026-09-28 |
 | 企业软件缩写全景 | 🏢 专题 | OA/CRM/ERP/SCM/MES 等企业信息化术语地图 | [topics/企业软件缩写全景.md](topics/企业软件缩写全景.md) | 2026-09-28 |
 | Solana 生态 | 🌐 专题 | 高性能公链 PoH+Sealevel 及其项目宇宙 | [topics/Solana生态.md](topics/Solana生态.md) | 2026-09-28 |
+| Vercel 工具链 | ⚙️ 专题 | v0 / Eve / Sandboxes——AI 部署与代理基建 | [topics/Vercel-工具总览.md](topics/Vercel-工具总览.md) | 2026-09-28 |
 
 ## 关系清单（边）
 
