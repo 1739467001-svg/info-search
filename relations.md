@@ -68,6 +68,10 @@ graph LR
 
     VZ["⚙️ Vercel 工具链<br/>v0 / Eve / Sandboxes"]:::done
     VZ -.->|RunSDK 连通 agent 评测| EVAL
+
+    GH["🧩 GitHub 团队协作<br/>PR / 保护分支"]:::done
+    GHC["CI/CD 流水线<br/>待研究"]:::td
+    GH -.->|交接点| GHC
     BAY -.->|应用到 AI 工程| EVAL
 
     classDef done fill:#e6f4ea,stroke:#34a853,stroke-width:2px;
@@ -79,7 +83,8 @@ class RSI done;
 class ENT done;
 class SOL done;
 class VZ done;
-class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
+class GH done;
+class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -106,6 +111,7 @@ class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,A
 | 企业软件缩写全景 | 🏢 专题 | OA/CRM/ERP/SCM/MES 等企业信息化术语地图 | [topics/企业软件缩写全景.md](topics/企业软件缩写全景.md) | 2026-09-28 |
 | Solana 生态 | 🌐 专题 | 高性能公链 PoH+Sealevel 及其项目宇宙 | [topics/Solana生态.md](topics/Solana生态.md) | 2026-09-28 |
 | Vercel 工具链 | ⚙️ 专题 | v0 / Eve / Sandboxes——AI 部署与代理基建 | [topics/Vercel-工具总览.md](topics/Vercel-工具总览.md) | 2026-09-28 |
+| GitHub 团队协作 | 🧩 专题 | PR/保护分支/冲突解决——3 人协作战术手册 | [topics/GitHub团队协作.md](topics/GitHub团队协作.md) | 2026-09-28 |
 
 ## 关系清单（边）
 

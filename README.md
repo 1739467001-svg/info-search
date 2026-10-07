@@ -30,6 +30,7 @@
 | 2026-09-28 | 概念 | 卷积神经网络（CNN） | [concepts/卷积神经网络.md](concepts/卷积神经网络.md) | 高 |
 | 2026-09-28 | 概念 | 日柱与八字四柱体系 | [concepts/日柱与八字体系.md](concepts/日柱与八字体系.md) | 中 |
 | 2026-09-28 | 概念 | 边际效应（边际效用递减） | [concepts/边际效应.md](concepts/边际效应.md) | 高 |
+| 2026-09-28 | 专题 | GitHub 团队协作（3 人实战指南） | [topics/GitHub团队协作.md](topics/GitHub团队协作.md) | 高 |
 | 2026-09-28 | 专题 | Solana 生态（Web3 公链全景） | [topics/Solana生态.md](topics/Solana生态.md) | 高 |
 | 2026-09-28 | 专题 | Vercel 与 AI 工具链（v0 / Eve / Sandboxes） | [topics/Vercel-工具总览.md](topics/Vercel-工具总览.md) | 高 |
 | 2026-09-28 | 专题 | 企业软件缩写全景（OA/CRM/ERP/SCM/MES…） | [topics/企业软件缩写全景.md](topics/企业软件缩写全景.md) | 高 |
@@ -44,6 +45,7 @@
 
 ## 写作约定
 
+- **回复格式**：对话里每次回答都以 Markdown 文档形式输出（标题层级/表格/代码块齐全），并同步存档推送
 - **front-matter**：每篇内容文档头部带 YAML 元数据（title / date / type / tags / confidence），索引脚本据此生成表格
 - **置信度**：**高** = 多来源交叉核实且含一手来源；**中** = 依赖二手转引或部分待核验；**低** = 单一来源，仅作线索
 - **深度底线（硬性）**：概念文档 ≥5 个已核实来源、≥1 个实例演算、机制详解 ≥2 个子系统拆解；聊天里给速览，文档必须深
