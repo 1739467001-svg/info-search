@@ -25,6 +25,7 @@
 <!-- INDEX:START -->
 | 日期 | 类型 | 主题 | 文档 | 置信度 |
 |------|------|------|------|--------|
+| 2026-10-11 | 专题 | TypeSafe AI（企业调查：公司 / Jev / System One 模型） | [topics/TypeSafe-AI.md](topics/TypeSafe-AI.md) | 高 |
 | 2026-09-28 | 概念 | RSI（递归自我改进 / Recursive Self-Improvement） | [concepts/RSI-递归自我改进.md](concepts/RSI-递归自我改进.md) | 高 |
 | 2026-09-28 | 概念 | TensorFlow（深度学习框架） | [concepts/TensorFlow.md](concepts/TensorFlow.md) | 高 |
 | 2026-09-28 | 概念 | 卷积神经网络（CNN） | [concepts/卷积神经网络.md](concepts/卷积神经网络.md) | 高 |

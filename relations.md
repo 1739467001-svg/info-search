@@ -69,6 +69,13 @@ graph LR
     VZ["⚙️ Vercel 工具链<br/>v0 / Eve / Sandboxes"]:::done
     VZ -.->|RunSDK 连通 agent 评测| EVAL
 
+    TS["🏢 TypeSafe AI / Jev<br/>System One 决策模型"]:::done
+    DM["🧠 决策模型赛道<br/>vs LLM 分类/传统分类器"]:::td
+    TS -->|Jev 上架 AI Gateway| VZ
+    TS -.->|评测观:反基准刷分| EVAL
+    TS -.->|社区做 Agent 每步决策| AGENT
+    TS -.->|赛道对照| DM
+
     GH["🧩 GitHub 团队协作<br/>PR / 保护分支"]:::done
     GHC["CI/CD 流水线<br/>待研究"]:::td
     GH -.->|交接点| GHC
@@ -82,9 +89,10 @@ class RIZ done;
 class RSI done;
 class ENT done;
 class SOL done;
-class VZ done;
-class GH done;
-class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK td;
+    class VZ done;
+    class GH done;
+    class TS done;
+    class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,FWK,ANTF,TBOOK,DM td;
 ```
 
 > 说明：实线 = 已研究关联；虚线 = 待研究潜在关联。节点内容对应下方表格。
@@ -112,6 +120,7 @@ class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,F
 | Solana 生态 | 🌐 专题 | 高性能公链 PoH+Sealevel 及其项目宇宙 | [topics/Solana生态.md](topics/Solana生态.md) | 2026-09-28 |
 | Vercel 工具链 | ⚙️ 专题 | v0 / Eve / Sandboxes——AI 部署与代理基建 | [topics/Vercel-工具总览.md](topics/Vercel-工具总览.md) | 2026-09-28 |
 | GitHub 团队协作 | 🧩 专题 | PR/保护分支/冲突解决——3 人协作战术手册 | [topics/GitHub团队协作.md](topics/GitHub团队协作.md) | 2026-09-28 |
+| TypeSafe AI / Jev | 🏢 专题·企业调查 | 旧金山 AI 实验室的"System One 决策模型"：类型化决策+校准置信度，不做生成 | [topics/TypeSafe-AI.md](topics/TypeSafe-AI.md) | 2026-10-11 |
 
 ## 关系清单（边）
 
@@ -143,6 +152,10 @@ class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,F
 | RSI | **评测瓶颈** → | EVAL | 自动评估器决定进化方向（Goodhart） |
 | RSI | **核心争议** → | 智能爆炸与对齐 | FOOM vs 渐进（待研究） |
 | 企业软件全景 | **深入单品** → | ERP 深读 | SAP/用友生态与实施（待研究） |
+| TypeSafe AI | **上架渠道** → | Vercel AI Gateway | Jev 经 AI Gateway 分发，Vercel 称其为史上采纳最快模型（已核实，更正 Vercel 篇旧误记） |
+| TypeSafe AI | **评测观对照** → | EVAL | 官方反 benchmaxxing：不发标准基准表、用带日期快照、内评连同缺点公布（待展开） |
+| TypeSafe AI | **社区延伸** → | Agent 评测 | typesafe-computer-use 等项目把 Jev 用于 agent 每步决策（待展开） |
+| TypeSafe AI | **赛道对照** → | 决策模型赛道 | Jev vs LLM 分类 prompt / 传统 ML 分类器 / 规则引擎（待研究） |
 
 ---
 
@@ -156,7 +169,7 @@ class TR,PT,BAG,IE,ERPD,ETHC,AIAGENT,GHC,FREQ,RM,HMAN,BENCH,AGENT,RAG,EDD,TOOL,F
 5. 机器学习全景（2 来源）
 6. 现代思维工具 100 讲（6 搜索来源，可补课程原文核验）
 
-**AI 工程线：** Reward Model / 人类评估 / Benchmark / Agent 评测 / RAG 评测 / 评测驱动开发 / 评测工具对比 / 频率学派统计
+**AI 工程线：** Reward Model / 人类评估 / Benchmark / Agent 评测 / RAG 评测 / 评测驱动开发 / 评测工具对比 / 频率学派统计 / 决策模型赛道（Jev vs LLM 分类 vs 传统分类器）
 **认知线（来自思维课）：** 心智模型清单 / 反脆弱 / 《思考，快与慢》/ 第一性原理（如提到）
 
 ---

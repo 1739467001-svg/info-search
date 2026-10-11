@@ -30,7 +30,7 @@ confidence: 高
 | Agent | **Eve** | "framework for building durable agents"（持久化 Agent 框架）|
 | Agent | Vercel Agent（任务/配方/线程）、Workflows | 平台级自动化编排 |
 | 评测 | **Run SDK** | "secure eval for your agents"——给 Agent 做安全评测（2026-08 发布，与库内 EVAL 条目呼应） |
-| 模型网关 | **AI Gateway** | 统一接入各家模型（日志/Key 管理）；2026 年自有模型 **Jev** 上线（自称被采纳最快的模型） |
+| 模型网关 | **AI Gateway** | 统一接入各家模型（日志/Key 管理）；2026-09 第三方模型 **Jev**（TypeSafe AI）上架，Vercel 称其为 Gateway 史上采纳最快模型（⚠️ 更正：原文误记为"Vercel 自有模型"，详见 `topics/TypeSafe-AI.md`） |
 | 环境 | **Sandboxes**（含 **Drives**、Devbox 任务、快照） | 弹性计算/沙盒环境，供 AI 编码代理使用 |
 | 数据 | Storage（Postgres/KV/Blob 集成）| 绑定数据库/存储 |
 | 安全 | Passport、Firewall、Observability | 身份接入、防火墙、可观测 |
@@ -105,6 +105,7 @@ pnpm add v0@latest        # 官方 SDK（已核实博客说明）
 - v0 新 API 公告（实例演算依据）：https://vercel.com/blog/introducing-the-new-v0-api
 - Bing 交叉核实（Vercel FX / Vercel Drive 不存在）：https://cn.bing.com/search?q=%22Vercel+FX%22
 - ⚠️ 未核：Sandbox "Drives" 官方文档页 404，标注待补
+- ⚠️ **更正（2026-10-11）**：原表"自有模型 Jev"有误——Jev 是 TypeSafe AI 的第三方模型，经 AI Gateway 分发（Vercel 2026-09-18 博文）：https://vercel.com/blog/ai-gateway-jev-model-launch —— 详见 `topics/TypeSafe-AI.md`
 
 ---
 
